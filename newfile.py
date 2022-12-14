@@ -6,7 +6,10 @@ def hello_world():
     return 'Hello, World!'
 
 print(__name__) #PRINTS: __main__
-#--------------------------------------------------------------------------------------------------
+#Now if we import random and try to print that:
+import random
+print(random.__name__)
+#--------------------------------------------------------------------------------------------------------------------------------
 #--------After running the code, if it exits with 0----------
 #--------Enter the following commands in the terminal, line by line----------
 # set FLASK_APP=newfile.py
@@ -21,3 +24,6 @@ if __name__ == "__main__":
     app.run()
 #--------------------------------------------------------------------------------------------------
 #__name__ means the name of the file which in this case is the __main__ **
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
