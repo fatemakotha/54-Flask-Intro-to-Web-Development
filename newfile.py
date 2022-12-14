@@ -5,11 +5,19 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+print(__name__) #PRINTS: __main__
+#--------------------------------------------------------------------------------------------------
 #--------After running the code, if it exits with 0----------
 #--------Enter the following commands in the terminal, line by line----------
-
 # set FLASK_APP=newfile.py
 # $env:FLASK_APP = "newfile.py"
 # flask run
-
 #-----After the link opens for the website, BE SURE TO press ctrl+c to quit it-------
+
+#--------------------OR----------------------
+
+
+if __name__ == "__main__":
+    app.run()
+#--------------------------------------------------------------------------------------------------
+#__name__ means the name of the file which in this case is the __main__ **
