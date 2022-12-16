@@ -5,6 +5,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+@app.route("/bye")
+def say_bye():
+    return "BYE"
+
 print(__name__) #PRINTS: __main__
 #Now if we import random and try to print that:
 import random
