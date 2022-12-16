@@ -1,3 +1,4 @@
+#More about functions:
 def add(n1, n2):
     return n1 + n2
 
@@ -15,7 +16,7 @@ def calculate(calc_function, n1, n2):
     return calc_function(n1, n2)
 result = calculate(multiply, 2, 3)
 print(result)
-
+#--------------------------------------------------------------------------------------------------
 #Nested functions:
 def outer_function():
     print("I am outer")
@@ -27,7 +28,7 @@ outer_function()
 #PRINTS:# I am outer
         # I am inner
 # *** YOU CANNOT CALL THE OUTER FUNCTION WITHOUT CALLING THE NESTED FUNCTION
-
+#--------------------------------------------------------------------------------------------------
 #Functions can be returned from other functions:
 def outerr_function():
     print("I am outer func")
