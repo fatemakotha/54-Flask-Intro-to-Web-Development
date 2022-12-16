@@ -27,3 +27,16 @@ outer_function()
 #PRINTS:# I am outer
         # I am inner
 # *** YOU CANNOT CALL THE OUTER FUNCTION WITHOUT CALLING THE NESTED FUNCTION
+
+#Functions can be returned from other functions:
+def outerr_function():
+    print("I am outer func")
+    def nestedd_function():
+        print("I am inner func")
+    return nestedd_function
+
+innerr_func = outerr_function()
+innerr_func()
+#PRINTS:
+# I am outer func
+# I am inner func
