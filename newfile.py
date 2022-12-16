@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/') #just one / means the user wants to see the home page
 def hello_world():
     return 'Hello, World!'
 
