@@ -26,3 +26,4 @@ def outer_function():
 outer_function()
 #PRINTS:# I am outer
         # I am inner
+# *** YOU CANNOT CALL THE OUTER FUNCTION WITHOUT CALLING THE NESTED FUNCTION
