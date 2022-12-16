@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/') #just one / means the user wants to see the home page
+@app.route('/') #just one / means the user wants to see the home page. This is called a PYTHON DECORATOR
 def hello_world():
     return 'Hello, World!'
 
